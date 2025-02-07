@@ -8,7 +8,6 @@ import "./WeatherDisplay.css";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter locations based on search input
   const filteredLocations = locationsData.filter((location) =>
     location.city.toLowerCase().includes(searchTerm.toLowerCase())
   );
